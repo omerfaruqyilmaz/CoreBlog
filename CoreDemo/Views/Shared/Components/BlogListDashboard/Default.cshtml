@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Son Yayınlanan Bloglar</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> <font size="4"># </font></th>
+                                <th>  <font size="4">Başlık</font> </th>
+                                <th>  <font size="4">Kategori </font> </th>
+                                <th>   <font size="4">Yayım Tarihi</font></th>
+                                <th>   <font size="4">Detaylar </font></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img src="@item.BlogImage" class="mr-2" alt="image">
+
+                                    </td>
+                                    <td>
+                                    <label class="badge badge-gradient-primary"><font size="3"> @item.BlogTitle</font></label>
+                                    </td>
+
+                                    <td>
+                                        <label class="badge badge-gradient-success"> <font size="3">@item.Category.CategoryName</font></label>
+                                    </td>
+                                    <td><label class="badge badge-gradient-info"> <font size="3">@(((DateTime)item.CreateDate).ToString("dd-MMMM-yyyy")) </font> </label> </td>
+                                    <td> <a href="/Blog/BlogReadAll/@item.BlogId" class="btn btn-gradient-dark">Detaylar</a> </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
