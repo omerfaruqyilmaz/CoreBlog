@@ -1,2 +1,2 @@
 # CoreBlog
-https://www.hizliresim.com/lu6ws40
+(https://www.hizliresim.com/lu6ws40)
