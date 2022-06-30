@@ -25,7 +25,7 @@
                             <div class="b-grid-top">
                                 <div class="blog_info_left_grid">
                                     <a href="single.html">
-                                        <img src="~/CoreBlogTema/web/images/b1.jpg" class="img-fluid" alt="">
+                                        <img src="@item.BlogImage" class="img-fluid" alt="" style="width: 720px; height: 360px">
                                     </a>
                                 </div>
                                 <div class="blog-info-middle">
@@ -81,48 +81,29 @@
                         @await Component.InvokeAsync("WriterLastBlog")
 
 
-                        <div class="single-gd my-5 tech-btm">
-                            <h4>Our Progress</h4>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="single-gd tech-btm">
-                            <h4>Son Yazı</h4>
-                            <div class="blog-grids">
-                                <div class="blog-grid-left">
-                                    <a href="single.html">
-                                        <img src="~/CoreBlogTema/web/images/b1.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-grid-right">
+                        
+                        @foreach (var item in Model)
+                        {
+                            <div class="single-gd tech-btm">
+                                <h4>Son Blog</h4>
+                                <div class="blog-grids">
+                                    <div class="blog-grid-left">
+                                        <a href="single.html">
+                                            <img src="@item.BlogImage" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="blog-grid-right">
 
-                                    <h5>
-                                        <a href="single.html">Pellentesque dui, non felis. Maecenas male</a>
-                                    </h5>
+                                        <h5>
+                                            <a href="single.html">@item.BlogTitle</a>
+                                        </h5>
+                                    </div>
+                                    <div class="clearfix"> </div>
                                 </div>
-                                <div class="clearfix"> </div>
                             </div>
+                        }
                         </div>
-                    </div>
-
+                        
                 </aside>
                 <!--//right-->
             </div>

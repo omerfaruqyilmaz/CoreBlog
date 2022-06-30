@@ -14,6 +14,7 @@ namespace EntityLayer.Concrete
         public string CommentUserName { get; set; }
         public string CommentTitle { get; set; }
         public string CommentContent { get; set; }
+        public string CommentImage { get; set; }
 
         public DateTime CommentDate { get; set; }
         public int  BlogScore { get; set; }
