@@ -1,1 +1,11 @@
 AspNet Core 5 ile geliştirdiğim bu projede kullandığım teknolojiler ve araçlar; Entity Framework Core, N Tier Architecture, Repository Design Pattern, Fluent Validation Core, Google Chart, Many to Many Relation, Statik Raporlama, Dinamik Raporlama, AspNet Core Identity, Api, Json Web Token, Swagger,Jwt, Dashboard, View Components, Rolleme, Yetkilendirme, Authentication, Authorize, Session Yönetimi, Ajax, Pagination, Deploy ...
+![1](https://user-images.githubusercontent.com/89321861/193450859-1203d1d9-d9e3-4ca5-8c97-6f2b734efa71.PNG)
+![2](https://user-images.githubusercontent.com/89321861/193450868-201e18ab-d446-4db0-a348-e3babdbbdc04.PNG)
+![4](https://user-images.githubusercontent.com/89321861/193450892-10d50954-c054-4e75-8097-2bbc2dec70a9.PNG)
+![5](https://user-images.githubusercontent.com/89321861/193450894-51e8e049-fc3d-464b-8c22-7ec379d80b2e.PNG)
+![6](https://user-images.githubusercontent.com/89321861/193450896-fd6e9cb5-f9f4-4272-aaeb-8801502d4be0.PNG)
+![9](https://user-images.githubusercontent.com/89321861/193450898-373197e8-110a-4b0c-b3eb-b6dac1223a27.PNG)
+![10](https://user-images.githubusercontent.com/89321861/193450900-f14165ea-1144-4035-bc1e-bb924ca28782.PNG)
+![11](https://user-images.githubusercontent.com/89321861/193450901-892c73b2-bcb0-4e2f-9d10-5b8e089e28ce.PNG)
+![12](https://user-images.githubusercontent.com/89321861/193450902-2d382ddd-67f1-4fea-bfbe-e0dbce3318c1.PNG)
+![13](https://user-images.githubusercontent.com/89321861/193450903-d2974352-c0b1-4c2e-bc80-a41ee69e5424.PNG)
